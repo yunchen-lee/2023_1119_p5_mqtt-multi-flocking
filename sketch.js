@@ -27,7 +27,7 @@ let subscribe_topicList = {
         "Radar": { min: 1, max: 5 },
         "Coral": { min: 0, max: 255 },
         "Airbag": { min: 220, max: 420 },
-        population: 50,
+        population: 20,
         clr: "#ffc803",
         pos: [0, 0],
         desiredseparation: 20,
@@ -35,7 +35,7 @@ let subscribe_topicList = {
     },
     "113XNature_KMFA/Echoes": {
         "Volume": { min: 0, max: 1 },
-        population: 50,
+        population: 20,
         clr: "#6b6960",
         pos: [100, 0],
         desiredseparation: 20,
@@ -44,7 +44,7 @@ let subscribe_topicList = {
     "113XNature_KMFA/EMILS": {
         "Height": { min: 0, max: 4400 },
         "Blow": { min: 0, max: 1 },
-        population: 100,
+        population: 20,
         clr: "#ffffff",
         pos: [20, 0],
         desiredseparation: 20,
