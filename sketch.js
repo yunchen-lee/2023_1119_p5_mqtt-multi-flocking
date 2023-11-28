@@ -212,7 +212,7 @@ function mouseClicked() {
 /// *MQTT* ///--------------------------------
 // called when a message arrives
 function onMessageArrived(message) {
-    console.log('I got a message:' + message.payloadString + ", from: " + message.destinationName);
+    // console.log('I got a message:' + message.payloadString + ", from: " + message.destinationName);
     // createP('got msg: <span style="background-color: #FFFF00">' + message.payloadString + "</span>, at " + hour() + ":" + minute() + ":" + second());
     // p.style("color:red;");
 
@@ -239,7 +239,7 @@ function onMessageArrived(message) {
 
 function MQTT_subscribe(target_Topic) {
     client.subscribe(target_Topic)
-    console.log("Topic subscribed: " + target_Topic)
+    // console.log("Topic subscribed: " + target_Topic)
 }
 
 
@@ -248,7 +248,7 @@ function onConnect() {
     console.log('client is connected');
 
     let sub_list = Object.keys(subscribe_topicList);
-    console.log(sub_list);
+    // console.log(sub_list);
     sub_list.forEach(t => {
         MQTT_subscribe(t + "/#");
     })
