@@ -27,7 +27,7 @@ let subscribe_topicList = {
         "Radar": { min: 1, max: 5 },
         "Coral": { min: 0, max: 255 },
         "Airbag": { min: 220, max: 420 },
-        population: 20,
+        population: 150,
         clr: "#ffc803",
         pos: [0, 0],
         desiredseparation: 20,
@@ -35,7 +35,7 @@ let subscribe_topicList = {
     },
     "113XNature_KMFA/Echoes": {
         "Volume": { min: 0, max: 1 },
-        population: 20,
+        population: 50,
         clr: "#6b6960",
         pos: [100, 0],
         desiredseparation: 20,
@@ -44,7 +44,7 @@ let subscribe_topicList = {
     "113XNature_KMFA/EMILS": {
         "Height": { min: 0, max: 4400 },
         "Blow": { min: 0, max: 1 },
-        population: 20,
+        population: 100,
         clr: "#ffffff",
         pos: [20, 0],
         desiredseparation: 20,
@@ -212,7 +212,7 @@ function mouseClicked() {
 /// *MQTT* ///--------------------------------
 // called when a message arrives
 function onMessageArrived(message) {
-    // console.log('I got a message:' + message.payloadString + ", from: " + message.destinationName);
+    console.log('I got a message:' + message.payloadString + ", from: " + message.destinationName);
     // createP('got msg: <span style="background-color: #FFFF00">' + message.payloadString + "</span>, at " + hour() + ":" + minute() + ":" + second());
     // p.style("color:red;");
 
